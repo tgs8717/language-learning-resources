@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(../Fonts/Poppins/webfontkit-20230218-130000)
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../Fonts/Montserrat/webfontkit-20230218-125212)
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../Fonts/Nunito/webfontkit-20230218-125818)
+}
+
+* {
+  font-family: 'Poppins';
+  background-color: #040622;
+  color: white;
+}
+
+.header-links {
+  background-color: #151345;
+  justify-content: flex-end;
+}
