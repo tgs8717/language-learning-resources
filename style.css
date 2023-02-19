@@ -1,25 +1,50 @@
 @font-face {
   font-family: 'Poppins';
-  src: url(../Fonts/Poppins/webfontkit-20230218-130000)
+  src: url(Fonts/Poppins/Poppins-Black.ttf);
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(../Fonts/Montserrat/webfontkit-20230218-125212)
+  src: url(Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: 'Nunito';
-  src: url(../Fonts/Nunito/webfontkit-20230218-125818)
+  src: url(Fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Noto-Serif-JP';
+  src: url(Fonts/Noto_Serif_JP/NotoSerifJP-Black.otf);
+}
+
+@font-face {
+  font-family: 'Noto-Serif-SC';
+  src: url(Fonts/Noto_Serif_SC/NotoSerifSC-Black.otf);
+}
+
+@font-face {
+  font-family: 'Noto-Serif-TC';
+  src: url(Fonts/Noto_Serif_TC/NotoSerifTC-Black.otf); 
 }
 
 * {
-  font-family: 'Poppins';
+  font-family: 'Nunito';
   background-color: #040622;
   color: white;
 }
 
-.header-links {
+.header {
+  display: block;
   background-color: #151345;
+  font-size: 20px;
+}
+
+.header-links,ul,a {
+  display: flex;
+  background-color: #151345;
+  list-style-type: none;
+  text-decoration: none;
   justify-content: flex-end;
+  padding: 5px;
 }
