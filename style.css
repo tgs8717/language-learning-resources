@@ -28,23 +28,116 @@
   src: url(Fonts/Noto_Serif_TC/NotoSerifTC-Black.otf); 
 }
 
-* {
-  font-family: 'Nunito';
-  background-color: #040622;
-  color: white;
+/* :root {
+  --color-bg: #ffffff;
+  --color-fg: crimson;
+  --color-nav: rgb(11, 11, 83);
+  --color-bg-hover: pink;
+  --color-active: lightpink;
+} */
+
+:root {
+  --color-bg: #040622;
+  --color-fg: lightgrey;
+  --color-nav: #151345;
+  --color-bg-hover: #1c1d54;
+  --color-active: #26236b;
+  --color-hover: aquamarine;
 }
 
-.header {
-  display: block;
-  background-color: #151345;
+* {
+  font-family: 'Nunito';
+  background-color: var(--color-bg);
+  ;
+  color: var(--color-fg);
+}
+
+:lang(zh_HANT) {
+  font-family: 'Noto-Serif-TC';
+}
+
+:lang(jp) {
+font-family: 'Noto-Serif-JP'
+}
+
+body {
+  margin: 0;
+}
+
+a:hover {
+  color: var(--color-hover);
+}
+/* top horizontal navigation bar */
+ul.navbar {
+  font-size: 20px;
+  background-color: var(--color-nav);
+  list-style-type: none;
+  margin: 0; padding: 15px 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  background-color: var(--color-nav);
+  text-decoration: none;
+  padding: 15px;
+}
+
+.navbar li:first-child {
+  float: left;
+}
+
+.navbar li a:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.navbar li a.active {
+  background-color: var(--color-active);
+}
+
+/* format main body of webpage content */
+.content {
+  margin: 50px 15px;
+}
+
+#intro {
+  display: inline;
+}
+
+#intro h1 {
+  font-size: 30px;
+}
+
+p {
   font-size: 20px;
 }
 
-.header-links,ul,a {
-  display: flex;
-  background-color: #151345;
-  list-style-type: none;
-  text-decoration: none;
-  justify-content: flex-end;
-  padding: 5px;
+.img {
+  display: inline;
+}
+
+/* table of contents */
+.table-of-contents {
+  font-size: large;
+  border: 1px solid; border-radius: 10px;
+  list-style-type: decimal;
+}
+
+.table-of-contents li {
+  font-size: larger;
+}
+
+.table-of-contents ol, .table-of-contents a {
+  list-style-type: decimal-leading-zero; text-decoration: none;
+}
+
+.chapter {
+  font-size: xx-large;
+}
+
+#jp_resources ~ ol {
+  list-style-type: decimal-leading-zero;
 }
